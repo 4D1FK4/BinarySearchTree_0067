@@ -27,11 +27,12 @@ class BinaryTree
     {
     ROOT = NULL; // Initializing ROOT to null
     }
+}
 
 // Insert a node in the binary search tree
 void insert(string element)
 {
-    Node *newNode = new Node(elemnt, NULL, NULL);
+    Node *newNode = new Node(element, NULL, NULL);
 
     newNode->info = element;
     newNode->leftchild = NULL;
@@ -42,4 +43,10 @@ Node *parent = NULL;
 Node *currentNode = NULL;
 
 search(element, parent, currentNode);
+
+if (parent == NULL)
+{
+    ROOT = newNode;
+    return;
+}
 }
