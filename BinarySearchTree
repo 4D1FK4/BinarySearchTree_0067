@@ -52,6 +52,10 @@ if (parent == NULL)
 
 if (element < parent->info)
 {
-    parent->leftchild = newnode;
+    parent->leftchild = newNode;
+}
+else if (element > parent->info)
+{
+    parent->rightchild = newNode;
 }
 }
