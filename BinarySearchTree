@@ -70,4 +70,9 @@ void search(string element, Node* &parent, Node *&currentNode)
 
     while ((currentNode != NULL) &&
     (currentNode->info != element))
+
+    {
+        parent = currentNode;
+        
+    }
 }
